@@ -1,0 +1,41 @@
+
+#div1
+Height: 150px;
+Width: 400px;
+Margin: 20px;
+Border: 1px solid red;
+Padding: 10px;
+
+MT=20
+BT=1
+PT=10
+H=150
+PB=10
+BB=1
+MB=20
+Total Height: 212
+
+ML=20
+BL=1
+PL=10
+W=400
+PR=10
+BR=1
+MR=20
+Total Width: 462
+
+
+BT=1
+PT=10
+H=150
+PB=10
+BB=1
+Browser Calculated Height: 172
+
+BL=1
+PL=10
+W=400
+PR=10
+BR=1
+Browser Calculated Width: 422
+
