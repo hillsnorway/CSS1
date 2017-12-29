@@ -7,14 +7,18 @@
 />
 
     <style>
-        div.center{
-            top:80px;
+        div.form{
+            margin: auto;
             width:600px;
-            font-size:20px;
+            font-size:15px;
+            background-color:transparent;
         }
         table, tr, td {
             vertical-align: top;
             text-align: right;
+        }
+        .required{
+            font-weight: bolder;
         }
     </style>
 
@@ -23,84 +27,89 @@
         <title>Home Page</title>
     </head>
     <header>
-        <h1>Chez a la Modal</h1>
+        <h1 style="font-family:fantasy">Chez a la Modal</h1>
         <hr/>
     </header>
     <body>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact</a>
-        </div>    
-        <hr/>
-        <div class="center">
-            <form action="#" method="POST">
-                <table>
-                    <tr>
-                        <td>Name:</td>
-                        <td><input type="text" name="name" style="width:175px"></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td >Email:</td>
-                        <td>
-                            <input type="text" name="email" style="width:175px">
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                            <td >Phone:</td>
-                            <td>
-                                <input type="text" name="phone" style="width:175px">
-                            </td>
-                        </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Reason for Inquiry:</td>
-                        <td>
-                            <select name="reason" style="width:180px">
-                                <option>Catering</option>
-                                <option>Private Party</option>
-                                <option>Feedback</option>
-                                <option>Other</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Additional Information:</td>
-                        <td>
-                            <textarea name="info" rows="5" style="width:175px"></textarea>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>Have you been to the restaurant?</td>
-                        <td style="text-align: left">
-                            <input type="radio" name="BeenBefore" value="NO" checked/>No
-                            <input type="radio" name="BeenBefore" value="YES"/>Yes    
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                            <td >Best days to contact you:</td>
-                            <td style="text-align:left">
-                                <input type="checkbox" name="days" value="MON"/>M 
-                                <input type="checkbox" name="days" value="TUE"/>T 
-                                <input type="checkbox" name="days" value="WED"/>W 
-                                <input type="checkbox" name="days" value="THU"/>T 
-                                <input type="checkbox" name="days" value="FRI"/>F 
-                            </td>
-                        </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="submit" value="Send Request">
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div class="main">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <hr/>    
+            <div class="center">
+                <div class="form">
+                    <form action="#" method="POST">
+                        <table>
+                            <tr style="height:100px"></tr>
+                            <tr>
+                                <td><label for="name" class="required">Name:</label></td>
+                                <td><input type="text" name="name" style="width:175px"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td ><label for="email" class="required">Email:</label></td>
+                                <td>
+                                    <input type="text" name="email" style="width:175px">
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td ><label for="phone" class="required">Phone:</label></td>
+                                <td>
+                                    <input type="text" name="phone" style="width:175px">
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><label for="reason" class="required">Reason for Inquiry:</label></td>
+                                <td>
+                                    <select name="reason" style="width:180px">
+                                        <option>Catering</option>
+                                        <option>Private Party</option>
+                                        <option>Feedback</option>
+                                        <option>Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><label for="info" class="required">Additional Information:</label></td>
+                                <td>
+                                    <textarea name="info" rows="5" style="width:175px"></textarea>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><label for="been_before" class="required">Have you been to the restaurant?</label></td>
+                                <td style="text-align: left">
+                                    <input type="radio" name="been_before" value="NO" checked/>No
+                                    <input type="radio" name="been_before" value="YES"/>Yes    
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td ><label for="days" class="required">Best days to contact you:</label></td>
+                                <td style="text-align:left">
+                                    <input type="checkbox" name="days" value="MON"/>M 
+                                    <input type="checkbox" name="days" value="TUE"/>T 
+                                    <input type="checkbox" name="days" value="WED"/>W 
+                                    <input type="checkbox" name="days" value="THU"/>T 
+                                    <input type="checkbox" name="days" value="FRI"/>F 
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Send Request">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>            
+                </div>
+            </div>            
         </div>
     </body>
     <footer>
