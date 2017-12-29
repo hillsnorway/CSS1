@@ -7,11 +7,27 @@
 />
 
 <style>
+    div.cover_image{
+        background: url("../Images/StarTurtleCover.jpg") no-repeat;
+        background-size:100% 100%;
+        width:400px;
+        height:400px;
+        border:2px solid black;
+        
+    }
     h1,h2,h3,h4,h5,h6 {
         color:blue;
         /* disabled underlining of headers
         text-decoration:underline;
         */
+    }
+    table,td,th {
+        margin:auto;
+        text-align:center;
+        border:1px solid black;
+    }
+    th{
+        background-color:gray;
     }    
 </style>
 
@@ -20,23 +36,112 @@
 </head>
 
 <body>
-        <img src="..\Images\StarTurtleCover.jpg"
-             alt="Album Cover Missing..." 
-             style="width: 250px"/>
-        <h1>Star Turtle</h1>
+    <div class="cover_image">
+        <!-- Div gets it's image in the internal style sheet-->
+    </div>
+    <div>
+        <h1 style="font-family:fantasy;">Star Turtle</h1>
         <h2>Band Name: Harry Connick Jr.</h2>
         <h3>Release Date: July 2, 1996</h3>
-        <p style="font-style:italic;">
+        <p>
             Star Turtle is Harry Connick, Jr.'s most ambitious album, a four-part suite that attempts to tell the evolution of jazz and R&B to funk and rock. 
         </p>
-        <h2>Band Members</h2>
-        <p>
-            Harry Connick Jr. - Vocals
-            <br/>
-            Harry Connick Jr. - Piano
-            <br/>
-            Reptilian Rocketeer - Wierd alien voice
-        </p> 
+        <hr/>
+    </div>
+    <div>
+        <h2 style="font-family:cursive;">Band Members</h2>
+        <ul style="font-style:italic; text-align:left">
+            <li>Harry Connick Jr. - Vocals</li>
+            <li>Harry Connick Jr. - Piano</li>
+            <li>Reptilian Rocketeer - Wierd alien voice</li>
+
+        </ul>
+    </div>
+    <div>
+        <table>
+            <caption><h2>Tracks</h2></caption>
+            <tr>
+                <th>Track #</th>
+                <th>Track Title</th>
+                <th>Track Length</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Star Turtle</td>
+                <td>4:35</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>How Do Y'all Know</td>
+                <td>4:55</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hear Me in the Harmony</td>
+                <td>4:46</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Reason to Believe</td>
+                <td>4:50</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Just Like Me</td>
+                <td>4:46</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Star Turtle 2</td>
+                <td>2:27</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Little Farley</td>
+                <td>6:05</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Eyes of the Seeker</td>
+                <td>4:51</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Nobody Like You to Me</td>
+                <td>3:43</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Boozehound</td>
+                <td>5:14</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Star Turtle 3</td>
+                <td>2:10</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Never Young</td>
+                <td>5:26</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Mind on the Matter</td>
+                <td>4:09</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>City Beneath the Sea</td>
+                <td>5:59</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Star Turtle 4</td>
+                <td>1:45</td>
+                </tr>
+        </table>      
+    </div>
 </body>
 
 </html>
