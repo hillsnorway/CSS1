@@ -7,14 +7,26 @@
 />
 
     <style>
-        table, tr, td {
+        table {
             vertical-align: top;
-            margin: auto;
+            margin: auto; 
+            /* only using the border to debug tables
+            border: 1px solid black; 
+            */
+        }
+
+        th {
+            text-decoration:underline;
+        }
+
+        table.menu_food {
             text-align: center;
         }
-        td {
-            width: 400px;
+
+        table.menu_beverage {
+            text-align: left;
         }
+
         .menu_header{
             font-size: 20px;
             font-weight: bolder;
@@ -38,7 +50,7 @@
             </div>
             <hr/>    
             <div class="center">
-                <table>
+                <table class="menu_food">
                     <tr>
                         <td>
                             <p class="menu_header">Burger and Fries</p>
@@ -67,7 +79,27 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                         </td>
                     </tr>
-        
+                </table>
+                <table class="menu_beverages">
+                    <tr>
+                        <th colspan="2" class="menu_header">Beverages</th>
+                    </tr>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
                 </table>
             </div>                
         </div>

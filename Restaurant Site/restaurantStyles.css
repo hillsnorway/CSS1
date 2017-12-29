@@ -1,5 +1,5 @@
 html {
-    font-family:verdana;
+    font-family:sans-serif;
 }
 header, footer {
     text-align:center;
@@ -20,4 +20,26 @@ div.center{
 
 div.menu{
     background-color:lightgray;
+}
+
+a{
+    color: black;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    text-decoration: none;
 }
