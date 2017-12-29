@@ -9,6 +9,13 @@ body{
     font-family:sans-serif;
     font-size:10px;
 }
+div.cover_image{
+    background: url("../Images/StarTurtleCover.jpg") no-repeat;
+    background-size:100% 100%;
+    width:300px;
+    height:300px;
+    border:2px solid black; 
+}
 div{
     position:relative;
     margin:auto;
@@ -21,3 +28,34 @@ div{
     border: 2px solid black;
     */
 }
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: blue;
+    background-color: transparent;
+}    
+a:hover {
+    text-decoration: underline;
+    color: hotpink;
+    background-color: greenyellow;
+}
+h1,h2,h3,h4,h5,h6 {
+    color:blue;
+    /* disabled underlining of headers
+    text-decoration:underline;
+    */
+}
+table, td {
+    margin:auto;
+    background-color: lightgrey;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+th{
+    background-color:gray;
+    font-style: normal;
+    border: 1px solid black;
+} 
