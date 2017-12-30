@@ -6,108 +6,101 @@
 
 />
 
-    <style>
-        div.form{
-            margin: auto;
-            width:600px;
-            font-size:15px;
-            background-color:transparent;
-        }
-        table, tr, td {
-            vertical-align: top;
-            text-align: right;
-        }
-        .required{
-            font-weight: bolder;
-        }
-    </style>
+<style>
+    form p label{
+        font-size:15px;
+        text-align: right;
+        /*display:block;*/
+        float:left;
+	    width:250px;
+    }
+    .required{
+        /*font-weight: bolder;*/
+    }
+</style>
 
 <html>
     <head>
         <title>Home Page</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
     </head>
     <header>
         <h1 style="font-family:fantasy">Chez a la Modal</h1>
         <hr/>
     </header>
     <body>
-        <div class="main">
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
+        <div id="main">
+            <div id="nav">
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li role="presentation"><a href="menu.html">Menu</a></li>
+                    <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="news_flash">
+                    <h3>New Restaurant Opening Soon!</h3>
+                    <p>We are proud to announce that we are opening a new restaurant in Washington :-)</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
             </div>
             <hr/>    
-            <div class="center">
-                <div class="form">
-                    <form action="#" method="POST">
-                        <table>
-                            <tr style="height:100px"></tr>
-                            <tr>
-                                <td><label for="name" class="required">Name:</label></td>
-                                <td><input type="text" name="name" style="width:175px"></td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td ><label for="email" class="required">Email:</label></td>
-                                <td>
-                                    <input type="text" name="email" style="width:175px">
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td ><label for="phone" class="required">Phone:</label></td>
-                                <td>
-                                    <input type="text" name="phone" style="width:175px">
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td><label for="reason" class="required">Reason for Inquiry:</label></td>
-                                <td>
-                                    <select name="reason" style="width:180px">
-                                        <option>Catering</option>
-                                        <option>Private Party</option>
-                                        <option>Feedback</option>
-                                        <option>Other</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td><label for="info" class="required">Additional Information:</label></td>
-                                <td>
-                                    <textarea name="info" rows="5" style="width:175px"></textarea>
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td><label for="been_before" class="required">Have you been to the restaurant?</label></td>
-                                <td style="text-align: left">
-                                    <input type="radio" name="been_before" value="NO" checked/>No
-                                    <input type="radio" name="been_before" value="YES"/>Yes    
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td ><label for="days" class="required">Best days to contact you:</label></td>
-                                <td style="text-align:left">
-                                    <input type="checkbox" name="days" value="MON"/>M 
-                                    <input type="checkbox" name="days" value="TUE"/>T 
-                                    <input type="checkbox" name="days" value="WED"/>W 
-                                    <input type="checkbox" name="days" value="THU"/>T 
-                                    <input type="checkbox" name="days" value="FRI"/>F 
-                                </td>
-                            </tr>
-                            <tr></tr>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <input type="submit" value="Send Request">
-                                </td>
-                            </tr>
-                        </table>
-                    </form>            
+            <div id="center">
+                <div style="width:fit-content; margin:auto;">
+                <form action="#" method="POST">
+                    <p>
+                        <label for="name" class="required">Name:&nbsp;</label>
+                        <input type="text" name="name" style="width:145px">
+                    </p>
+                    <p>
+                        <label for="email" class="required">Email:&nbsp;</label>
+                        <input type="text" name="email" style="width:145px">
+                    </p>
+                    <p>
+                        <label for="phone" class="required">Phone:&nbsp;</label>
+                        <input type="text" name="phone" style="width:145px">
+                    </p>
+                    <p>
+                        <label for="reason" class="required">Reason for Inquiry:&nbsp;</label>
+                        <select name="reason" style="width:145px">
+                            <option>Catering</option>
+                            <option>Private Party</option>
+                            <option>Feedback</option>
+                            <option>Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="info" class="required">Additional Information:&nbsp;</label>
+                        <textarea name="info" rows="5" style="width:145px"></textarea>
+                    </p>
+                    <p>
+                        <label for="been_before" class="required">Have you been to the restaurant?&nbsp;</label>
+                        <input type="radio" name="been_before" value="NO" checked/>No
+                        <input type="radio" name="been_before" value="YES"/>Yes 
+                    </p>
+                    <p>
+                        <label for="days" class="required">Best days to contact you:&nbsp;</label>
+                        <input type="checkbox" name="days" value="MON"/>M 
+                        <input type="checkbox" name="days" value="TUE"/>T 
+                        <input type="checkbox" name="days" value="WED"/>W 
+                        <input type="checkbox" name="days" value="THU"/>T 
+                        <input type="checkbox" name="days" value="FRI"/>F
+                    </p>
+                    <p>
+                        <label for="submit"></label>
+                        <input type="submit" value="Send Request">
+                    </p>
+                </form>
                 </div>
             </div>            
         </div>

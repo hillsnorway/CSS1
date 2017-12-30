@@ -1,106 +1,115 @@
 <!doctype html>
 
 <link href="restaurantStyles.css"
-      rel="stylesheet" 
-      type="text/css"
+rel="stylesheet" 
+type="text/css"
 
 />
 
-    <style>
-        table {
-            vertical-align: top;
-            margin: auto; 
-            /* only using the border to debug tables
-            border: 1px solid black; 
-            */
-        }
-
-        th {
-            text-decoration:underline;
-        }
-
-        table.menu_food {
-            text-align: center;
-        }
-
-        table.menu_beverage {
-            text-align: left;
-        }
-
-        .menu_header{
-            font-size: 20px;
-            font-weight: bolder;
-        }
+<style>
+    #menu_header{
+        font-size: 20px;
+        font-weight: bolder;
+        text-decoration:underline;
+    }
+    
+    #menu_food {
+        text-align: center;
+    }
+    
+    #menu_beverages {
+        text-align: left;
+    }
     </style>
     
-<html>
+    <html>
     <head>
         <title>Home Page</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
     </head>
     <header>
         <h1 style="font-family:fantasy">Chez a la Modal</h1>
         <hr/>
     </header>
     <body>
-        <div class="main">
-            <div class="menu">
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="contact.html">Contact</a>
+        <div id="main">
+            <div id="nav">
+                <ul class="nav nav-pills">
+                    <li role="presentation">
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="active"><a href="menu.html">Menu</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="news_flash">
+                    <h3>New Restaurant Opening Soon!</h3>
+                    <p>We are proud to announce that we are opening a new restaurant in Washington :-)</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                </div>
             </div>
             <hr/>    
-            <div class="center">
-                <table class="menu_food">
-                    <tr>
-                        <td>
-                            <p class="menu_header">Burger and Fries</p>
+            <div class="container" id="center">
+                <div class"row" id="menu_food">
+                    <div class="col-xs-4">
+                            <p id="menu_header">Burger and Fries</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                        <td>
-                            <p class="menu_header">Hotdog and Chips</p>
+                    </div>
+                    <div class="col-xs-4">
+                            <p id="menu_header">Hotdog and Chips</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                        <td>
-                            <p class="menu_header">Italian Sausage and Peppers</p>
+                    </div>
+                    <div class="col-xs-4">
+                            <p id="menu_header">Italian Sausage and Peppers</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="menu_header">Tenderloin Sandwich and Chips</p>
+                    </div>
+                    <div class="col-xs-4">
+                            <p id="menu_header">Tenderloin Sandwich and Chips</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                        <td>
-                            <p class="menu_header">House Salad</p>
+                    </div>
+                    <div class="col-xs-4">
+                            <p id="menu_header">House Salad</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                        <td>
-                            <p class="menu_header">Brisket Sandwhich and Fries</p>
+                    </div>
+                    <div class="col-xs-4">
+                            <p id="menu_header">Brisket Sandwhich and Fries</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet ac metus eu dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </td>
-                    </tr>
-                </table>
-                <table class="menu_beverages">
-                    <tr>
-                        <th colspan="2" class="menu_header">Beverages</th>
-                    </tr>
-                    <tr>
-                        <td>Root Beer</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </table>
+                    </div>
+                </div>
+                <div class"row" id="menu_beverages">
+                    <div class="col-xs-12 table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th colspan="2" id="menu_header">Beverages</th>
+                            </tr>
+                            <tr>
+                                <td>Root Beer</td>
+                                <td>$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bottled Water</td>
+                                <td>$1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td>$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Iced Tea</td>
+                                <td>$1.25</td>
+                            </tr>
+                        </table>
+                    </div>                    
+                </div>
             </div>                
         </div>
     </body>
