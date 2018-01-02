@@ -11,18 +11,22 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-        </script>
         <!-- Optional theme -->
         <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        <!-- Include jQuery - !!!MUST LOAD BEFORE bootstrap js libraries!!! -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
     </head>
     <header>
         <h1 style="font-family:fantasy">Chez a la Modal</h1>
-        <hr/>
+        <!--<hr/>-->
     </header>
     <body>
+        <noscript>THIS SITE BEST VIEWED WITH JAVASCRIPT ENABLED!</noscript>
         <div id="main">
             <div id="nav">
                 <ul class="nav nav-pills">
@@ -34,13 +38,50 @@
                     <li role="presentation"><a href="menu.html">Menu</a></li>
                     <li role="presentation"><a href="contact.html">Contact</a></li>
                 </ul>
-                <div id="news_flash">
-                    <h3>New Restaurant Opening Soon!</h3>
-                    <p>We are proud to announce that we are opening a new restaurant in Washington :-)</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                <div class="container" id="news" >
+                    <div id="carousel-news" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-news" data-slide-to="1"></li>
+                            <li data-target="#carousel-news" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <h3>We're opening a new location!</h3>
+                                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                <div class="carousel-caption">                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+                                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                <div class="carousel-caption">                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>The Drink of the Month is SG Special Brew.</h3>
+                                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <!--  Hid the controls...
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        -->
+                        </a>
+                    </div>
                 </div>
             </div>
-            <hr/>
+            <!--<hr/>-->
             <div id="center">
                 <div style="border:1px solid black; height:150px; width:400px; margin: auto">
                     <img src="../images/chez a la modal.png"/>
@@ -54,7 +95,7 @@
         </div>
     </body>
     <footer>
-            <hr/>
+            <!--<hr/>-->
             <h3>
             789 Delicious St, Tasty, OR, 97000<br/><br/>
             (503)123-4567
